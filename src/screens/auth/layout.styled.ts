@@ -45,7 +45,7 @@ export const authLayoutFooterSx = {
   },
   justifyContent: "space-between",
   py: {
-    lg: "64px",
+    lg: "34px",
   },
 };
 export const authLayoutAdvertScreenSx = {
@@ -59,10 +59,24 @@ export const authLayoutAdvertScreenSx = {
   px: "64px",
   py: "156px",
   color: "white",
+  position: "relative",
+  zIndex: 0,
+};
+
+export const authLayoutPictureContainer = {
   backgroundImage: `url(${background.src})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
-};
+  position: "fixed",
+  right: "0px",
+  top: "0px",
+  bottom: "0px",
+  width: '50%',
+  display: {
+    xs: "none",
+    lg: "flex",
+  },
+}
 
 export const authLayoutIssueContainerSx = {
   alignItems: {
@@ -79,8 +93,8 @@ export const authLayoutIssueContainerSx = {
 };
 export const authLayoutHeaderSx = {
   mb: {
-    xs: "50px",
-    sm: "64px",
+    xs: "20px",
+    sm: "29px",
   },
   py: {
     xs: "0px",

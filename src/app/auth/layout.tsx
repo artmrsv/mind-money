@@ -7,7 +7,7 @@ import {
   authLayoutFooterSx,
   authLayoutFormContainerSx,
   authLayoutHeaderSx,
-  authLayoutIssueContainerSx,
+  authLayoutIssueContainerSx, authLayoutPictureContainer,
 } from "@/screens/auth/layout.styled";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "@/assets/png/Logo.png";
@@ -22,6 +22,9 @@ export default function AuthLayout({
 
   return (
     <Box sx={authLayoutContainerSx}>
+      <Box
+        sx={authLayoutPictureContainer}
+      />
       <Box sx={authLayoutFormContainerSx}>
         <Box>
           <Box component="header" sx={authLayoutHeaderSx}>
@@ -71,6 +74,7 @@ export default function AuthLayout({
           rich guy. Sign up and get started today free trial fo 14 days!
         </Typography>
       </Box>
+
     </Box>
   );
 }
