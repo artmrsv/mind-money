@@ -7,54 +7,54 @@ export const authLayoutContainerSx = {
   height: "100vh",
   overflow: "auto",
   bgcolor: {
-    xs: 'white',
-    md: EnumColors.lightGray
+    xs: "white",
+    md: EnumColors.lightGray,
   },
-  backgroundColor: 'secondary.light',
+  backgroundColor: "secondary.light",
   padding: {
-    xs: '32px 24px',
-    lg: '0px'
-  }
+    xs: "32px 24px",
+    lg: "0px",
+  },
 };
 
 export const authLayoutFormContainerSx = {
   display: "flex",
   width: {
-    xs: '100%',
-    lg: '50%'
+    xs: "100%",
+    lg: "50%",
   },
   height: "100%",
   flexDirection: "column",
   justifyContent: "space-between",
   padding: {
-    xs: '0px',
-    lg: '0 64px 0 6%'
-  }
+    xs: "0px",
+    lg: "0 64px 0 6%",
+  },
 };
 
 export const authLayoutFooterSx = {
   display: {
-    xs: 'none',
-    sm: "flex"
+    xs: "none",
+    sm: "flex",
   },
   width: "100%",
   alignItems: {
-    sm:'center',
-    lg: 'flex-end',
-    xl:'center'
+    sm: "center",
+    lg: "flex-end",
+    xl: "center",
   },
   justifyContent: "space-between",
   py: {
-    lg: "64px"
+    lg: "64px",
   },
 };
 export const authLayoutAdvertScreenSx = {
   display: {
-    xs: 'none',
-    lg: 'flex'
+    xs: "none",
+    lg: "flex",
   },
   flexDirection: "column",
-  width: '50%',
+  width: "50%",
   height: "100%",
   px: "64px",
   py: "156px",
@@ -76,4 +76,14 @@ export const authLayoutIssueContainerSx = {
     lg: "column",
     xl: "row",
   },
-}
+};
+export const authLayoutHeaderSx = {
+  mb: {
+    xs: "50px",
+    sm: "64px",
+  },
+  py: {
+    xs: "0px",
+    lg: "24px",
+  },
+};

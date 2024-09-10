@@ -5,11 +5,13 @@ import {
   authLayoutAdvertScreenSx,
   authLayoutContainerSx,
   authLayoutFooterSx,
-  authLayoutFormContainerSx, authLayoutIssueContainerSx,
+  authLayoutFormContainerSx,
+  authLayoutHeaderSx,
+  authLayoutIssueContainerSx,
 } from "@/screens/auth/layout.styled";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "@/assets/png/Logo.png";
-import {Image} from "@/ui/Image/Image";
+import { Image } from "@/ui/Image/Image";
 
 export default function AuthLayout({
   children,
@@ -22,21 +24,8 @@ export default function AuthLayout({
     <Box sx={authLayoutContainerSx}>
       <Box sx={authLayoutFormContainerSx}>
         <Box>
-          <Box
-            component="header"
-            sx={{
-
-              mb: {
-                xs: "50px",
-                sm: "64px",
-              },
-              py: {
-                xs: "0px",
-                lg: "24px",
-              },
-            }}
-          >
-            <Image src={logo} />
+          <Box component="header" sx={authLayoutHeaderSx}>
+            <Image src={logo} alt="logo" />
           </Box>
           <Suspense fallback={<div>Loading...</div>}>
             <Box
@@ -54,11 +43,7 @@ export default function AuthLayout({
           <Typography variant="h4" component="span" color="secondary">
             © 2024 MIND MONEY LIMITED
           </Typography>
-          <Box
-            display="flex"
-            gap="4px"
-            sx={authLayoutIssueContainerSx}
-          >
+          <Box display="flex" gap="4px" sx={authLayoutIssueContainerSx}>
             <Typography variant="h4" component="span" color="secondary">
               Have some issue?
             </Typography>
