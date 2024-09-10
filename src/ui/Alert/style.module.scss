@@ -1,0 +1,24 @@
+.toast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  /* Dark/blur 50 */
+
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 12px;
+}
+
+.toastError {
+  background-color: red !important;
+  color: #ffff;
+
+  svg {
+    fill:#a0203a
+  }
+}
+
