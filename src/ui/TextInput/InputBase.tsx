@@ -3,7 +3,6 @@
 import React, { ReactNode } from "react";
 import {
   FormHelperText,
-  InputBaseProps,
   TextField as MuiTextField,
 } from "@mui/material";
 import { UseFormRegisterReturn } from "react-hook-form";
@@ -25,7 +24,7 @@ interface TextInputWrapperProps {
 }
 
 export type TextInputProps = TextInputInternalProps &
-  InputBaseProps &
+  TextFieldProps &
   TextInputWrapperProps;
 
 const InputBase: React.FC<TextInputProps> = ({

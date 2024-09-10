@@ -85,7 +85,7 @@ const PasswordValidator: React.FC<PasswordValidatorProps> = ({
       <Stack gap="8px">
         <Rule
           message="Can’t contain e-mail address"
-          isValid={password && validateData.isNotContainEmail}
+          isValid={!!password && validateData.isNotContainEmail}
         />
         <Rule
           message="At least 8 characters"

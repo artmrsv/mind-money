@@ -3,7 +3,6 @@ import MuiTabs from "@mui/material/Tabs";
 import MuiTab from "@mui/material/Tab";
 import { styled } from "@mui/material/styles";
 import { SxProps } from '@mui/system';
-import Theme from "@/config/theme";
 
 interface TabsOptions {
   label: string;
@@ -11,7 +10,7 @@ interface TabsOptions {
 
 interface TabsProps {
   options?: Array<TabsOptions>;
-  sx?: SxProps<Theme>
+  sx?: SxProps
 }
 
 const Tab = styled(MuiTab)(({ theme }) => ({

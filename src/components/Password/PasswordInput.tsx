@@ -6,7 +6,7 @@ import { AuthForm } from "@/app/auth/page";
 
 interface PasswordInputProps {
   value: AuthForm["password"];
-  onChange: (event: string) => void;
+  onChange: (event: any) => void;
   error: boolean;
 }
 
